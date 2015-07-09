@@ -18,12 +18,12 @@
       
           $.okvideo({ source: video, 
                     volume: 100, 
-                    loop: true,
+                    loop: false,
                     hd:true, 
                     adproof: true,
                     annotations: false,
                           onFinished: function(){
-                          location.reload()
+                          location.reload() //recargo toda la pag y eso hace que sea random el loop simulado
                           }
                  });
     });
