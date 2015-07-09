@@ -7,23 +7,11 @@
   <script src='okvideo.js'></script>
   <script type="text/javascript">
     $(function(){
-        $.okvideo({ playlist: {
-                    list: 'PLC9DE802A1C092320', 
-                    playlists.index: 0,
-                    volume: 100, 
-                    loop: true,
-                    hd:true, 
-                    adproof: true,
-                    annotations: false,
-                    onFinished: function() { console.log('finished') },
-                    unstarted: function() { console.log('unstarted') },
-                    onReady: function() { console.log('onready') },
-                    onPlay: function() { console.log('onplay') },
-                    onPause: function() { console.log('pause') },
-                    buffering: function() { console.log('buffering') },
-                    cued: function() { console.log('cued') },
-                    }
-                 });
+          $.okvideo({ playlist: {
+                list: '[PLC9DE802A1C092320]', // a YT playlist id
+                suggestedQuality: '[720]'
+              }
+           });
     });
   </script>
 
