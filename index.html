@@ -7,8 +7,22 @@
   <script src='okvideo.js'></script>
   <script type="text/javascript">
     $(function(){
-          $.okvideo('http://www.youtube.com/watch?v=a4rNF0kq6eQ');
+          $.okvideo({ source: 'a4rNF0kq6eQ', 
+                    volume: 0, 
+                    loop: true,
+                    hd:true, 
+                    adproof: true,
+                    annotations: false,
+                    onFinished: function() { console.log('finished') },
+                    unstarted: function() { console.log('unstarted') },
+                    onReady: function() { console.log('onready') },
+                    onPlay: function() { console.log('onplay') },
+                    onPause: function() { console.log('pause') },
+                    buffering: function() { console.log('buffering') },
+                    cued: function() { console.log('cued') },
+                 });
     });
+                 
   </script>
 
 <p></head>
