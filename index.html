@@ -18,21 +18,32 @@
                  
   </script>
 
-<p></head>
-<body bgcolor="#000000"></p>
+<script type="text/javascript">
+window.onload=function() {
+//create the numer
+var randomNumber = Math.rand() * (100 + 1);
 
-<script>
-function myFunction() {
-    var x = Math.floor((Math.random() * 10) + 1);
-    document.getElementById("randomnumber").innerHTML = x;
+//make sure there are no decial places
+randomNumber = Math.floor(randomNumber);
+
+//now put it on the page
+var elm = document.getElementById("random");
+elm.innerHTML=randomNumber+"";
 }
 </script>
+
+
+
+<p></head>
+<body bgcolor="#000000"></p
+
+<div id="random">random number being created...</div> 
+
 
 <p></body></p>
 
 <p><footer></p>
   <p><font color="grey"> Ideado por Luisito. Implementado por luchoz. v0.0.2a - 2015</font></p>
-  <div id="randomnumber"></div>
 
 <p></footer> 
 </html></p>
