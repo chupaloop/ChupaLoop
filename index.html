@@ -2,34 +2,19 @@
 <html>
 <head>
   <title>ChupaLoop</title></p>
-  
-    <script type="text/javascript">
-    window.onload= function myFunction() {
-    
-    var j = [
-    "'a4rNF0kq6eQ'",
-    "'eVTXPUF4Oz4'",
-    "'kXYiU_JCYtU'"
-    ];
-    
-    var x = Math.floor((Math.random() * 3));
-    document.getElementById("demo").innerHTML = j[x];
-    video = j[x]
-    }
-  </script>
-  
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js'></script>
   <script src='okvideo.js'></script>
   <script type="text/javascript">
     $(function(){
     var j = [
-    "'a4rNF0kq6eQ'",
-    "'eVTXPUF4Oz4'",
-    "'kXYiU_JCYtU'"
+    "'a4rNF0kq6eQ'",  //aca van los ID de youtube 
+    "'eVTXPUF4Oz4'",  //de cada video, y mas abajo esta la funcion
+    "'kXYiU_JCYtU'" //para que salgan random
     ];
+    var cantidad = j.length;
     
-    var x = Math.floor((Math.random() * 3));
-    video = j[x]
+    var x = Math.floor((Math.random() * cantidad));
+    video = j[x];
       
           $.okvideo({ source: video, 
                     volume: 100, 
@@ -49,11 +34,7 @@
 
 <p><footer></p>
 
-
-
   <p><font color="grey"> Ideado por Luisito. Implementado por luchoz. v0.0.2a - 2015</font></p>
-  <p id="demo"><font color="grey"></font></p>
-
 
 <p></footer> 
 </html></p>
